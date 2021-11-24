@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "chromo-calculator",
+    "name": "Chromo Calculator",
     "slug": "chromo-calculator",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -21,9 +21,10 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#ffffff00"
+      },
+      "package": "com.jonyjas.chromocalculator"
     },
     "web": {
       "favicon": "./assets/favicon.png"
