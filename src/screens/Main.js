@@ -1,9 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
-import useShake from "../hooks/useShake";
-import { Divider } from "react-native-elements";
 import Keypad from "../components/Keypad";
-import FunctionPad from "../components/FunctionPad";
 import TextArea from "../components/TextArea";
 import Line from "../components/Line";
 
