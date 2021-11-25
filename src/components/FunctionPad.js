@@ -22,11 +22,6 @@ export default function FunctionPad({ setData, color }) {
       top: 7,
     },
   });
-  const button = () => {
-    if (color.name === "black") {
-      return "blackButton";
-    }
-  };
   return (
     <View
       style={{

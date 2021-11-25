@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { View, Text } from "react-native";
 import * as Animatable from "react-native-animatable";
 
-export default function TextArea({ data, setData }) {
+export default function TextArea({ data, setData, color }) {
   const [topText, setTopText] = React.useState("");
   const [text, setText] = React.useState("");
   const [animate, setAnimation] = React.useState(false);
@@ -12,6 +12,10 @@ export default function TextArea({ data, setData }) {
         setText("");
         setAnimation(false);
         setTopText("");
+        break;
+      case "<<":
+        const deletedText = text.slice(0, text.length - 1);
+        setText(deletedText);
         break;
       case "+/-":
         if (text.charAt(0) === "+") {
@@ -38,7 +42,7 @@ export default function TextArea({ data, setData }) {
       {animate ? (
         <Animatable.Text
           animation="slideInRight"
-          style={{ fontSize: 30, textAlign: "right", color: "#B5B5B5" }}
+          style={{ fontSize: 30, textAlign: "right", color: color.sideText }}
         >
           {topText}
         </Animatable.Text>

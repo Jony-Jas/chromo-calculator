@@ -33,7 +33,7 @@ export default function Main({ color }) {
           paddingHorizontal: 20,
         }}
       >
-        <TextArea data={data} setData={setData} />
+        <TextArea data={data} setData={setData} color={color}/>
       </View>
       <Line color={color}/>
       <View
@@ -46,9 +46,3 @@ export default function Main({ color }) {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  header: {
-    fontSize: 30,
-  },
-});

@@ -1,6 +1,5 @@
 import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
-import { color } from "react-native-elements/dist/helpers";
 import FunctionPad from "./FunctionPad";
 
 export default function Keypad({ setData, color }) {
@@ -52,8 +51,8 @@ export default function Keypad({ setData, color }) {
         </TouchableOpacity>
       </View>
       <View style={styles.groupcontainer}>
-        <TouchableOpacity onPress={() => setData("%")}>
-          <Text style={styles.keyPad}>%</Text>
+        <TouchableOpacity onPress={() => setData("<<")}>
+          <Text style={styles.keyPad}>⌫</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => setData("9")}>
           <Text style={styles.keyPad}>9</Text>
@@ -64,8 +63,8 @@ export default function Keypad({ setData, color }) {
         <TouchableOpacity onPress={() => setData("3")}>
           <Text style={styles.keyPad}>3</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => setData("00")}>
-          <Text style={styles.keyPad}>00</Text>
+        <TouchableOpacity onPress={() => setData("%")}>
+          <Text style={styles.keyPad}>%</Text>
         </TouchableOpacity>
       </View>
       <View>
