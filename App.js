@@ -1,5 +1,4 @@
 import React from "react";
-import { StatusBar } from "expo-status-bar";
 import SafeViewAndroid from "./src/components/SafeViewAndroid";
 import Main from "./src/screens/Main";
 import { SafeAreaView } from "react-native";
